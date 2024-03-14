@@ -1,68 +1,183 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  font-family: 'Poppins';
+  box-sizing: border-box;
+  
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.card{
+  
+  background-color: rgb(22, 22, 22);
+  color: whitesmoke;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 3px 5px 20px rgba(46, 46, 46, 0.719);
+  margin: 10px;
+  text-align: center;
+  max-width: 250px;
+  display: inline-block;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.card .card-img{
+  max-width: 60%;
+  height: 3rem;
+  border: 1px solid rgba(73, 73, 73, 0.705);
+  border-radius: 5em;
+  
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.card-title{
+    font-weight: bold;
+    margin: 0;
+    color: hsl(0, 0%, 73%);
+}
+
+.card-text{
+  color: hsl(0, 0%, 40%);
+}
+
+.button{
+  background-color: hsl(200, 100%, 50%);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  box-shadow: 3px 2px 1px black;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.student{
+  font-size: 2em;
+  padding: 10px;
+  border: 1px solid hsl(0, 0%, 50%, 0.8);
+  margin-top: 10px;
 }
+
+.student p{
+  margin: 0;
+}
+
+.welcome-message{
+  background-color: rgb(243, 229, 27);
+  color: whitesmoke;
+  padding: 10px;
+  border-radius: .4em;
+  margin: 0;
+  text-align: center;
+}
+
+.login-prompt{
+  font-size: 2.5em;
+  background-color: hsl(0, 100%, 42%);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.list-category{
+  font-size: 2.5em;
+  font-weight: bold;
+  color: hsl(0, 0%, 0%);
+  margin-bottom: 10px;
+  text-align: center;
+  border: 3px solid;
+  border-radius: 5px;
+  background-color: burlywood;
+}
+
+
+.list-items li{
+  list-style: none;
+  font-size: 1.5em;
+  color: hsl(0, 0%, 25%);
+  text-align: center;
+  margin: 0;
+}
+
+.list-items li:hover{
+  color: hsl(0, 0%, 55%);
+  cursor: pointer;
+}
+
+.Counter-container{
+  background: linear-gradient(blue, grey);
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Poppins';
+  color: white;
+  border-radius: 15px;
+}
+
+.count-display{
+  font-size: 10em;
+  margin-top: 0;
+  margin-bottom: 50px;
+
+}
+
+.counter-button{
+  width: 150px;
+  height: 50px;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0px 5px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.counter-button:hover{
+    background-color: rgba(40, 8, 70, 0.534);
+    color: white;
+    transition: all 5ms linear;
+}
+
+
+.color-picker-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color-picker-container h1{
+  margin: 50px;
+  font-size: 3rem;
+}
+
+.color-display{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid cyan;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  transition: 0.25 ease;
+}
+
+.color-display p{
+      filter: invert(1);
+      font-size: 2rem;
+      text-align: center;
+}
+
+
+.color-picker-container label{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="color"]{
+  width: 75px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid hsl(0, 0%, 80%);
+}
+
+
+
+
