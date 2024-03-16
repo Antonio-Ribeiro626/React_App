@@ -1,10 +1,10 @@
-import ColorPicker from "./ColorPicker"
+import FilmeApp from './FilmeApp'
 function App() {
 
   return(
     <>
     
-    <ColorPicker />
+    <FilmeApp />
   </>
   )
 }
