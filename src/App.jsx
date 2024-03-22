@@ -1,10 +1,13 @@
-import ColorPicker from "./ColorPicker"
+
+import TaskApp from './TaskApp'
+
 function App() {
+
 
   return(
     <>
     
-    <ColorPicker />
+    <TaskApp />
   </>
   )
 }
