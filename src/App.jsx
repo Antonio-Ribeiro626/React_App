@@ -1,13 +1,11 @@
-
-import TaskApp from './TaskApp'
-
+import DigitalClock from './DigitalClock'
 function App() {
 
 
   return(
     <>
     
-    <TaskApp />
+    <DigitalClock />
   </>
   )
 }

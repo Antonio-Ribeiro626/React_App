@@ -1,6 +1,6 @@
 *{
-  font-family: 'Poppins';
   box-sizing: border-box;
+  margin: 0;
   
 }
 
@@ -258,6 +258,39 @@ justify-content: center;
 
 .delete-button, .move-button{
   margin-left: 10px;
+}
+
+@keyframes switch {
+  from { background: blueviolet;}
+  to{  background: purple;}
+}
+
+
+.clock-container{
+background-color: red;
+animation-name: switch;
+animation-duration: 4s ;
+transition: animation linear;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.clock{
+ font-size: 5em;
+ font-weight: bold;
+ font-family: monospace;
+ text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.671);
+ backdrop-filter: blur(60px);
+ background: rgba(0, 0, 0, 0.493);
+ padding: 1.5rem;
+ border-radius: .5rem;
 }
 
 
